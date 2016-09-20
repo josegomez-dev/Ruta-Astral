@@ -1,0 +1,61 @@
+
+@font-face{
+	font-family: 'lato-light';
+	src: url("../fonts/lato/Lato-Light.ttf");
+}
+
+@font-face{
+	font-family: 'lato-med';
+	src: url("../fonts/lato/Lato-Medium.ttf");
+}
+
+@font-face{
+	font-family: 'lato-bold';
+	src: url("../fonts/lato/Lato-Bold.ttf");
+}
+
+html,body{
+	height: auto;
+	width: auto;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	margin: 0 auto;
+}
+
+/* menú lateral */
+.side-bar {
+	display: none !important;
+}
+
+#menu .btn {
+	display: none !important;
+}
+
+thead {
+    background: #00aa00;
+    /* padding: 10px 0; */
+}
+
+thead tr {
+    /* padding: 10px 0; */
+}
+
+th {
+    padding: 10px 5px;
+}
+
+td {
+    border: 1px solid;
+    padding: 5px;
+}
+
+td:nth-child(1), th:nth-child(1) {
+    display: none;
+}
+
+td:nth-child(2), td:nth-child(5) {
+    white-space: nowrap;
+}

@@ -1,0 +1,50 @@
+.buscar {
+  text-align: right;
+  padding-right: 5px;
+  font-family: 'lato-bold';
+}
+
+.buscar h4 {
+
+  text-align: left;
+  margin: 10px;
+}
+
+.buscar a {
+  text-decoration: none;
+  font-family: 'lato-bold';
+  font-size: 13px;
+  color: #FA023C;
+  margin-left: 15px;
+}
+
+.buscar p {
+  font-family: 'lato-bold';
+}
+
+.resultados {
+  text-align: left;
+  border-collapse: collapse;
+  border-spacing: 5px; 
+  font-family: 'lato-med';
+  font-size: 16px;
+  color: #ffffff;
+  border-color: #413d3d;
+  width: 85%;
+  margin: 25px;
+  padding: 10px;
+}
+
+.resultados tr {
+  height: 20px;
+}
+
+.resultados input {
+  width: 75px;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+  /* margin: 10px 5px ; */
+
+}

@@ -1,0 +1,294 @@
+/**
+			PRESETS
+
+COLORES:
+	GRIS #413D3D
+	NEGRO #040004
+	VINO #4B000F
+	LIMA #C8FF00
+	CLOUDS #ECF0F1
+	ROJO #FA023C
+/
+
+/*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.
+			CSS SALON
+*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*/
+
+.salon{
+	width: 700px;
+	margin: 50px auto;
+	position: absolute;
+	left: 0;
+	right: 0;
+	/*background-color: #356489;*/
+	background: url('../img/bg_alfa.png');
+	/* height: 100px; */
+	/* background: rgba(4, 0, 4, 0.44); */
+	/*background: url('../img/bg_alfa.png');*/
+}
+
+.main{
+	height: 100%;
+}
+
+.mesa{
+	width: 150px;
+	height: 100%;
+	margin: 10px 0 0 6px;
+	display: inline-block;
+	background: #225566;
+	background: url('../img/bg_alfa.png');
+	cursor: pointer;
+}
+
+.mesa h4{
+	display: block;
+	float: none;
+	clear: both;
+	margin: 5px auto;
+	text-align: center;
+}
+
+.mesa p{	
+	display: inline-block;
+	float: none;
+	clear: both;
+	width: 100%;
+	margin: 5px auto;
+	text-align: center;
+}
+
+
+.capacidad {
+	width: 100%;
+	text-align: center;
+}
+
+.estado{
+	width: 100%;
+	display: inline-block;
+	float: none;
+	clear: both;
+	text-align: center;	
+}
+
+.estado p{
+	width: auto;
+}
+
+.estado i.libre{
+	color: #449933;
+}
+
+.estado i.ocupada{
+	color: #f01e1e;
+}
+
+.estado i.reservada{
+	color: #d0c621;
+}
+
+.estado i:hover{	
+	cursor: default;
+}
+
+.datos-mesa{
+	width: 790px;
+	height: 100%;
+	margin: 0 auto;
+	padding: 10px 0 0 0;
+	display: block;
+	float: none;
+	clear: both;
+	background: url('../img/bg_alfa.png');
+}
+
+.datos-mesa h1{
+	display: block;
+	float: none;
+	clear: both;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.datos-mesa section{
+	width: 220px;
+	height: auto;
+	display: block;
+	float: left;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+.datos-mesa section h4{
+	margin: 0 auto;
+	display: block;
+	float: none;
+}
+
+.datos-mesa section p{
+	margin: 0 auto;
+	text-align: center;
+}
+
+.boton-derecho{
+	background: #FA023C;
+	border: none;
+	color: #ecf0f1; 
+	display: block;
+	float: right;
+	padding: 5px 5px;
+	margin: 10px 5px 10px 0px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+#estado{
+	background: #FA023C;
+	border: none;
+	color: #ecf0f1; 
+	display: block;
+	float: none;
+	clear: both;
+	margin: 0 auto;
+	padding: 5px 5px;
+	font-weight: bold;
+}
+
+#orden-mesa{
+	width: 790px;
+	height: 100%;
+	margin: 10px auto 0 auto;
+	padding: 10px 0 0 0;
+	display: block;
+	float: none;
+	clear: both;
+	background: url('../img/bg_alfa.png');
+}
+
+#orden-mesa h1{
+	display: block;
+	float: none;
+	clear: both;
+	margin: 0 auto;
+	text-align: center;
+}
+
+section .hide{
+	display: none;
+}
+
+#standar-table{
+	width: auto;
+	margin: 10px auto;
+	padding: 0;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+#contenedor-datos .hide{
+	display: none;
+}
+
+table th{
+	border: none;	
+	background: #FA023C;
+}
+
+table tr, table th, table td{
+	padding: 5px;
+}
+
+table tr:nth-child(odd){
+	background: url('../img/bg_alfa.png');
+	background: url('../img/bg_alfa.png');
+}
+
+table i{
+	margin: 0 3px;
+}
+
+table i:hover{
+	color: #FA023C;
+}
+
+.xxs{
+	width: 50px;
+}
+
+.xs{
+	width: 100px;
+}
+
+.s{
+	width: 150px;
+}
+.m{
+	width: 200px;
+}
+
+.l{
+	width: 250px;
+}
+
+.xl{
+	width: 300px;
+}
+
+.xxl{
+	width: 350px;
+}
+
+.xxxl{
+	width: 400px;
+}
+
+table td{
+	border: 1px solid #413D3D;
+}
+
+.modal {
+	position: fixed;
+	width: 824px;
+	height: 100%;
+	z-index: 9999;
+	background: rgba(115, 113, 113, 0.68); 
+}
+
+
+.modal-cuerpo{
+	position: relative;
+	width: 600px;
+	height: 512px;
+	overflow: auto;
+	margin: 0px auto;
+	background: #fff;
+	padding: 0 1px;	
+}
+
+.tabla{
+	background: #413D3D;
+	/*
+	background: #413D3D;
+	background: #040004;
+	background: #4B000F;
+	background: #C8FF00;
+	background: #ECF0F1;
+	background: #FA023C;
+	*/
+}
+
+#botones-orden{
+	background: #556688;
+	margin: 30px 110px 0 0;
+}
+
+.selected{
+	font-weight: bold;
+}
+
+#clrfix{
+	display: block;
+	float: none;
+	clear: both;
+}

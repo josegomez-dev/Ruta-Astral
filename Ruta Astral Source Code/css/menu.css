@@ -1,0 +1,143 @@
+/**
+			PRESETS
+
+COLORES:
+	GRIS #413D3D
+	NEGRO #040004
+	VINO #4B000F
+	LIMA #C8FF00
+	CLOUDS #ECF0F1
+	ROJO #FA023C
+/
+
+/*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.
+			CSS MENU
+*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*/
+
+@font-face{
+	font-family: 'lato-light';
+	src: url("../fonts/lato/Lato-Light.ttf");
+}
+
+@font-face{
+	font-family: 'lato-med';
+	src: url("../fonts/lato/Lato-Medium.ttf");
+}
+
+@font-face{
+	font-family: 'lato-bold';
+	src: url("../fonts/lato/Lato-Bold.ttf");
+}
+
+.menu{
+	width: 800px;
+	margin: 100px auto;
+	position: absolute;
+	left: 0;
+	right: 0;
+	/* height: 100px; */
+	/* background: rgba(4, 0, 4, 0.44); */
+	/*background: url('../img/bg_alfa.png');*/
+}
+
+.menu h1{
+	margin: 0 auto;
+	text-align: center;
+	font-family: lato-bold;
+
+}
+
+.menu .item {
+	width: 250px;
+	height: 100%;
+	display: block;
+	float: left;
+	margin: 5px 0 5px 10px;
+	background: url('../img/bg_alfa.png');
+}
+
+.menu .item  h3{
+	margin: 20px 0 0 0;
+	font-weight: bold;
+}
+
+
+
+
+/* 	
+#menu .item :hover{
+.background: url('../img/bg_alfa.png');
+	background: url('../img/bg_alfa.png');
+}
+*/
+
+.menu .plato{
+	width: 80px;
+	height: 80px;
+	margin: 10px 10px 0 10px;
+	display: block;
+	float: left;
+	border: solid 1px #413D3D;
+
+}
+
+.menu .cal{
+	text-align: left;
+	font-style: italic;
+	margin: 10px 0 0 0;
+}
+
+.menu .desc{
+	width: 230px;
+	color:#C8FF00;
+	padding: 10px;
+	text-align: center;
+	margin: 0px;
+
+}
+
+.menu .btn {
+	display: block;
+	float: right;
+	padding: 8px 15px;
+	margin-right: 12px;
+	border: none;
+	font-weight: bold;
+	background: #FA023C;
+	color: #ecf0f1;
+}
+
+.division{
+	width: 758px;
+	height: auto;
+	display: block;
+	float: none;
+	clear: both;
+	margin: 5px 10px 0 10px;
+	padding: 10px;
+	text-align: left;
+	background: #413D3D;
+}
+
+.division h2{
+	font-size: 17px;
+	color: #fff;
+	font-weight: bold;
+	font-family: 'lato-bold';
+}
+
+.division-platos{
+	width: 770px;
+	height: 1px;
+	margin: 0 0 0 10px	;
+	display: block;
+	float: none;
+	clear: both;
+	background: #413D3D;
+}
+
+#clrfix{
+	display: block;
+	float: none;
+	clear: both;
+}

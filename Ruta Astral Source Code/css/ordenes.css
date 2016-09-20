@@ -1,0 +1,50 @@
+/**
+			PRESETS
+
+COLORES:
+	GRIS #413D3D
+	NEGRO #040004
+	VINO #4B000F
+	LIMA #C8FF00
+	CLOUDS #ECF0F1
+	ROJO #FA023C
+/
+
+/*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.
+			CSS ORDENES
+*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*/
+
+#ordenes{
+	width: 800px;
+	margin: 30px auto;
+	position: absolute;
+	left: 0;
+	right: 0;
+	background: url('../img/bg_alfa.png');
+}
+
+#ordenes h1{
+	font-size: 20px;
+	margin: 10px auto 0 auto;
+	text-align: center;
+}
+
+#boton-derecho{
+	background: #FA023C;
+	border: none;
+	color: #ecf0f1; 
+	display: block;
+	float: none;
+	padding: 5px 5px;
+	margin: 0 auto;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+#clrfix{
+	display: block;
+	float: none;
+	clear: both;
+}
+
+

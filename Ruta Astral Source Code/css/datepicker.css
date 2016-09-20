@@ -1,0 +1,37 @@
+.ui-datepicker {
+	background: #413D3D;
+	
+	padding: 5px;
+}
+.ui-datepicker a {
+	text-decoration: none;
+	color: #fff;
+}
+
+table.ui-datepicker-calendar td {
+	padding: 5px;
+}
+
+.ui-datepicker-today {
+	background: #fff;
+}
+
+.ui-datepicker-today a {
+	color: #040004;
+}
+
+.ui-datepicker-current-day {
+	background: #4B000F;
+}
+
+.ui-datepicker-title {
+	text-align: center;
+}
+
+.ui-datepicker-next {
+	float: right;
+}
+
+.ui-datepicker a {
+	cursor: pointer;
+}
