@@ -1,0 +1,81 @@
+/**
+			PRESETS
+
+COLORES:
+	GRIS #413D3D
+	NEGRO #040004
+	VINO #4B000F
+	LIMA #C8FF00
+	CLOUDS #ECF0F1
+	ROJO #FA023C
+/
+
+/*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.
+			CSS TABLAS
+*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*/
+#standar-table{
+	width: auto;
+	margin: 10px auto;
+	padding: 0;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+table th{
+	border: none;	
+	background: #FA023C;
+}
+
+table tr, table th, table td{
+	padding: 5px;
+}
+
+table tr:nth-child(odd){
+	background: url('../img/bg_alfa.png');
+	background: url('../img/bg_alfa.png');
+}
+
+table i{
+	margin: 0 3px;
+}
+
+table i:hover{
+	color: #FA023C;
+}
+
+#xxs{
+	width: 50px;
+}
+
+#xs{
+	width: 100px;
+}
+
+#s{
+	width: 150px;
+}
+#m{
+	width: 200px;
+}
+
+#l{
+	width: 250px;
+}
+
+#xl{
+	width: 300px;
+}
+
+#xxl{
+	width: 350px;
+}
+
+#xxxl{
+	width: 400px;
+}
+
+table td{
+	border: 1px solid #413D3D;
+}
+
+

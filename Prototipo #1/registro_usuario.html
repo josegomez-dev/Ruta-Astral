@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<link rel="stylesheet" href="css/reset.css">
+		<!-- <link rel="stylesheet" href="css/font-awesome.css"> -->
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		
+		<div class="side-bar">
+			<div class="image"></div>
+			<nav>
+				<a href="menu.html" >Menú</a>
+				<a href="#" >Ingresar</a>
+				<a href="#" class="selected" >Registrarse</a>
+			</nav>
+		</div>
+		<div class="main"> 
+			<div class="contenedor">
+				<div class="panel">
+					<div class="titulo">Registro Usuario</div>
+					<div class="cuerpo">
+						<form id="registro-usuario">
+							<label for= "nombre"> Nombre de usuario</label>
+							<input type="text" id="nombre">
+							<label for="fecha-De-Nacimiento"> Fecha de nacimiento</label>
+							<input type="text" id="fecha-de-nacimiento">
+							<label for= "clave"> Contraseña</label>
+							<input type="contrasenna" id="clave">
+							<label for= "clave2"> Confirmar contraseña</label>
+							<input type="password" id="clave2">
+							<label for= "correo"> Correo electronico</label>
+							<input type="text" id="correo">
+							<label for= "correo2"> Confirmar correo electronico</label>
+							<input type="text" id="correo2">
+							<input type="button" id="registrarse" value="Registrarse" class="flotar-derecha btn">
+						</form>	
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="scripts/registro_usuario.js"> </script>
+	</body>
+</html>

@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/font-awesome.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<div class="side-bar">
+			<div class="image"></div>
+			<nav>
+				<a href="#" class="selected">Menú</a>
+				<a href="#">Salón</a>
+				<a href="#">Configuración</a>
+				<a href="#">Órdenes</a>
+				<a href="#">Facturación</a>
+				<a href="#">Reportes</a>
+			</nav>
+			<p>Usuario1</p>
+			<nav class="opciones-usuario">
+				<a href="#">Registrase</a>
+				<a href="#">Ingresar</a>
+				<a href="#">Perfil</a>
+				<a href="#">Cerrar sesion</a>
+			</nav>
+		</div>
+		<div class="main">
+			<div class="top-menu">
+				<nav>
+					<a href="#" class="selected">General</a>
+					<a href="#">Mesas</a>
+					<a href="#">Platos</a>
+					<a href="#">Usuarios</a>
+					<a href="#">Puestos</a>
+				</nav>
+			</div>
+			<div class="container">
+
+
+				<!-- <label for="">Hola mundo</label> -->
+				<!-- <input type="text"> -->
+		
+
+			</div>
+		</div>
+		<script src="scripts/script.js"></script>
+	</body>
+</html>

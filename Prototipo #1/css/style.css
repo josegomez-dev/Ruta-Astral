@@ -1,0 +1,279 @@
+@font-face{
+	font-family: 'lato-light';
+	src: url("../fonts/lato/Lato-Light.ttf");
+}
+
+@font-face{
+	font-family: 'lato-med';
+	src: url("../fonts/lato/Lato-Medium.ttf");
+}
+
+@font-face{
+	font-family: 'lato-bold';
+	src: url("../fonts/lato/Lato-Bold.ttf");
+}
+
+html,body{
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+i:hover{
+	cursor: pointer;	
+	color: #C8FF00;
+}
+
+body {
+	background: url("../img/steak_bg.png") no-repeat fixed #040004;
+	background-size: 1024px;
+	background-position: center;
+	color: #ecf0f1;
+	font-family: lato-med;
+	width: 1024px;
+	margin: 0 auto;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	text-align: center;
+}
+
+/* menú lateral */
+.side-bar {
+	/*border-left: 10px solid #4B000F;*/
+	height: 100%;
+	float: left;
+	width: 200px;
+	background: #413D3D;
+	position: fixed;
+}
+
+.side-bar a{
+	display: block;
+	padding: 10px 0;
+	text-align: center;
+	font-size: 20px;
+}
+
+.side-bar .selected {
+	background: #4B000F;
+}
+
+.side-bar a:hover {
+	color: #C8FF00;
+}
+
+.side-bar p{
+	/* background: #040004; */
+	text-align: center;
+	margin: 20px 0 5px;
+	font-size: 20px;
+	padding: 10px 0;
+	font-weight: bold;
+}
+
+.side-bar .opciones-usuario a{
+	font-size: 16px;
+	padding: 5px 0;
+}
+/* fin menú lateral */
+
+/* Lado derecho */
+.main {
+	width: 824px;
+	position: relative;
+	margin: 0 0 0 200px;
+}
+/* Sub menu superior */
+.top-menu {
+	position: fixed;
+	background: #040004;
+	width: 100%;
+	z-index: 100;
+	transition: 0.5s;
+	overflow: hidden;
+	height: 0;
+	opacity: 0;
+}
+
+.top-menu a, .side-bar a{
+	color: #ecf0f1;
+	text-decoration: none;
+}
+
+.top-menu a {
+	padding: 10px;
+	float: left;
+}
+
+.top-menu .selected{
+	background: #4B000F;
+}
+
+/*
+* .show es para hacer visible el menu superior
+*/
+
+.show{
+	opacity: 1;
+	height: 38px;
+}
+
+/* Fin de Submenu */
+
+.contenedor {
+	width: 700px;
+	margin: 70px auto;
+	position: absolute;
+	left: 0;
+	right: 0;
+	/* height: 100px; */
+	/* background: rgba(4, 0, 4, 0.44); */
+	/* background: url('../img/bg_alfa.png'); */
+}
+
+.mensaje-error {
+	background: #FA023C;
+	color: #ecf0f1;
+	padding: 5px; 
+}
+
+.panel {
+	width: inherit;
+	/*background: rgba(4, 0, 4, 0.65);*/
+	margin: 0 0 20px;
+}
+
+.panel .titulo {
+	padding: 10px 20px;
+	background: rgba(89, 86, 87, 0.95);
+}
+
+.panel .cuerpo {
+	padding: 10px 20px 20px;
+	background: url("../img/bg_alfa.png");
+}
+
+.panel textarea {
+	width: 100%;
+	height: 50px;
+}
+
+.text-input {
+	margin: 0 0 12px;
+	border: none;
+	height: 20px;
+	display: block;
+	width: 100%;
+}
+
+.panel .flotar-derecha {
+	float: right;
+}
+
+.panel label{
+	margin: 0 0 5px;
+	display: block;
+}
+
+.contenedor-tabla{
+	width: inherit;
+	overflow: auto;
+	max-height: 200px;
+	min-height: 150px;
+	margin: 0 0 20px;
+	background: #fff;
+	color: #040004;
+}
+
+.panel .col-2{
+	width: 315px;
+	float: left;
+	margin: 0 15px 0 0;
+}
+
+.tabla{
+	min-width: 100%;
+}
+
+.tabla td{
+	white-space: nowrap;
+	padding: 5px 10px;
+	border-collapse: collapse;
+}
+.tabla th{
+	font-weight: bold;
+	padding: 6px 10px;
+}
+
+.tabla tbody tr{
+	border-top: 1px solid;
+}
+
+.tabla .selected{
+	background: #413D3D;
+	color: #fff;
+}
+
+.tabla-reporte {
+	max-height: 400px;
+}
+
+.style-select{
+	width: 100%;
+	border: none;
+	height: 22px;
+	background: #fff;
+	margin: 0 0 12px;
+}
+/* Fin lado derecho */
+
+/* stilo generales */
+.btn {
+	padding: 3px 15px;
+	border: none;
+	font-weight: bold;
+	background: #FA023C;
+	color: #ecf0f1;
+}
+
+label {
+	color: #C8FF00;
+}
+
+.image {
+	margin: 10px auto;
+	height: 100px;
+	width: 100px;
+	background: #ccc;
+}
+
+.img {
+	height: 100px;
+	width: 100px;
+	float: left;
+	background: #ccc;
+	margin: 0 10px 0 0;
+}
+
+a.hide,
+.hide{
+	display: none;
+}
+
+.clear{
+	clear: both;
+}
+
+.form-pequeno{
+	margin: 0 auto;
+	width:250px;
+}
+
+.col-9{
+	width: 125px;
+
+	display: inline-block;
+}

@@ -1,0 +1,292 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/salon.css">
+		<link rel="stylesheet" href="css/font-awesome.css">
+	</head>
+	<body>
+		<div class="side-bar">
+			<div class="image"></div>
+			<nav>
+				<a href="menu.html">Menú</a>
+				<a href="#" class="selected">Salón</a>
+				<a href="#">Configuración</a>
+				<a href="ordenes.html">Órdenes</a>
+				<a href="#">Facturación</a>
+				<a href="#">Reportes</a>
+			</nav>
+			<p>Usuario1</p>
+			<nav class="opciones-usuario">
+				<a href="registro_usuario.html">Registrase</a>
+				<a href="#">Ingresar</a>
+				<a href="#">Perfil</a>
+				<a href="#">Cerrar sesion</a>
+			</nav>
+		</div>
+		<div class="main">
+			<div class="top-menu">
+				<nav>
+					<a href="#" class="selected">General</a>
+					<a href="#">Mesas</a>
+					<a href="#">Platos</a>
+					<a href="#">Usuarios</a>
+				</nav>
+			</div>	
+
+			<!--CUERPO DE SALON.HTML-->
+			<section id="salon">
+				
+				<!--GRAFICO MESAS-->
+				<div class="mesa">
+					<img src="img/mesa.png">
+					<h4>Abraxas</h4>
+					<div class="estado">
+						<i class="fa fa-circle fa-1x libre"></i>
+						<p>Libre</p>
+					</div>
+				</div>
+
+				<div class="mesa">
+					<img src="img/mesa.png">
+					<h4>Arcanas</h4>
+					<div class="estado">
+						<i class="fa fa-circle fa-1x ocupada"></i>
+						<p>Ocupada</p>
+					</div>
+				</div>
+
+				<div class="mesa">
+					<img src="img/mesa.png">
+					<h4>Chakra</h4>
+					<div class="estado">
+						<i class="fa fa-circle fa-1x reservada"></i>
+						<p>Reservada</p>
+					</div>
+				</div>
+
+				<div class="mesa">
+					<img src="img/mesa.png">
+					<h4>Antares</h4>
+					<div class="estado">
+						<i class="fa fa-circle fa-1x libre"></i>
+						<p>Libre</p>
+					</div>
+				</div>
+
+				<div class="mesa">
+					<img src="img/mesa.png">
+					<h4>Virgo</h4>
+					<div class="estado">
+						<i class="fa fa-circle fa-1x ocupada"></i>
+						<p>Ocupada</p>
+					</div>
+				</div>
+
+				<div class="mesa">
+					<img src="img/mesa.png">
+					<h4>Médium</h4>
+					<div class="estado">
+						<i class="fa fa-circle fa-1x reservada"></i>
+						<p>Reservada</p>
+					</div>
+				</div>
+
+				<div class="mesa">
+					<img src="img/mesa.png">
+					<h4>Tantra</h4>
+					<div class="estado">
+						<i class="fa fa-circle fa-1x libre"></i>
+						<p>Libre</p>
+					</div>
+				</div>
+
+				<div class="mesa">
+					<img src="img/mesa.png">
+					<h4>Amanecer</h4>
+					<div class="estado">
+						<i class="fa fa-circle fa-1x ocupada"></i>
+						<p>Ocupada</p>
+					</div>
+				</div>
+
+				<div class="mesa">
+					<img src="img/mesa.png">
+					<h4>Tarot</h4>
+					<div class="estado">
+						<i class="fa fa-circle fa-1x reservada"></i>
+						<p>Reservada</p>
+					</div>
+				</div>
+
+				<div class="mesa">
+					<img src="img/mesa.png">
+					<h4>Acuario</h4>
+					<div class="estado">
+						<i class="fa fa-circle fa-1x libre"></i>
+						<p>Libre</p>
+					</div>
+				</div>
+				<!--END GRAFICO MESAS-->
+
+				<!--DESPLEGABLE OTRAS MESAS-->
+				<select id="boton-derecho">
+					
+					<option value="">Otras mesas</option>
+					
+					<option value="mesa011">Mesa 11</option>
+					<option value="mesa012">Mesa 12</option>
+					<option value="mesa013">Mesa 13</option>
+					<option value="mesa014">Mesa 14</option>
+					<option value="mesa015">Mesa 15</option>
+				</select>
+				<!--END DESPLEGABLE OTRAS MESAS-->
+
+				<!--DATOS DE LA MESA-->
+				<div class="datos-mesa">
+					<h1>Información de la mesa</h1>
+					<section>
+						<p id="nombre-mesa">Mesa: Antares</p>
+						<p>Id: 0006</p>
+						<p>Capacidad: 10</p>
+					</section>
+
+					<section>
+						<p>Salonero: Jose</p> 	
+						<p>Descripción de la mesa</p>
+					</section>
+
+					<section>
+						<p>Estado</p>
+						<select id="estado">
+							
+							<option value="libre">Libre</option>
+							<option value="ocupada">Ocupada</option>
+							<option value="reservada">Reservada</option>
+						
+						</select>
+					</section>
+
+					<div id="clrfix"></div>
+				</div>
+				<!--END DATOS DE LA MESA-->
+
+
+				<input type="button" value="Agregar plato" id="boton-derecho">
+
+				
+				<!--END BOTONES DE ORDENES-->
+
+				<!--ORDEN DE LA MESA-->
+				<section id="orden-mesa">
+					<h1>Mesa Arcanas</h1>
+
+					<!--TABLA DE ORDEN-->
+					<table id="standar-table">
+						<thead>
+							<th id="xxl">Nombre</th>
+							<th id="s">Descripción</th>
+							<th id="s">Estado</th>
+							<th id="xxs">Editar</th>
+						</thead>
+
+						<tbody>
+							<tr>
+								<td>Arroz con pollo</td>
+								<td>Con papas</td>
+								<td>Entregado</td>
+								<td>	
+									<i class="fa fa-pencil"></i>
+									<i class="fa fa-trash-o"></i>
+								</td>
+							</tr>
+							<tr>
+								<td>Arroz con pollo</td>
+								<td>Con ensalada</td>
+								<td>Pendiente</td>
+								<td>	
+									<i class="fa fa-pencil"></i>
+									<i class="fa fa-trash-o"></i>
+								</td>
+							</tr>
+							<tr>
+								<td>Arroz con pollo</td>
+								<td>Normal</td>
+								<td>Pendiente</td>
+								<td>	
+									<i class="fa fa-pencil"></i>
+									<i class="fa fa-trash-o"></i>
+								</td>
+							</tr>
+							<tr>
+								<td>Acomp. Papas fritas</td>
+								<td>Grande</td>
+								<td>Pendiente</td>
+								<td>	
+									<i class="fa fa-pencil"></i>
+									<i class="fa fa-trash-o"></i>
+								</td>
+							</tr>
+							<tr>
+								<td>Acomp. Frijoles</td>
+								<td>Normal</td>
+								<td>Pendiente</td>
+								<td>	
+									<i class="fa fa-pencil"></i>
+									<i class="fa fa-trash-o"></i>
+								</td>
+							</tr>
+							<tr>
+								<td>Coca cola</td>
+								<td>Sin hielo, 600ml</td>
+								<td>Listo</td>
+								<td>	
+									<i class="fa fa-pencil"></i>
+									<i class="fa fa-trash-o"></i>
+								</td>
+							</tr>
+							<tr>
+								<td>Fanta naranja</td>
+								<td>Sin hielo, 600ml</td>
+								<td>Listo</td>
+								<td>	
+									<i class="fa fa-pencil"></i>
+									<i class="fa fa-trash-o"></i>
+								</td>
+							</tr>
+							<tr>
+								<td>Coca cola</td>
+								<td>Sin hielo, 600ml</td>
+								<td>Listo</td>
+								<td>	
+									<i class="fa fa-pencil"></i>
+									<i class="fa fa-trash-o"></i>
+								</td>
+							</tr>
+							<tr>
+								<td>Coca cola</td>
+								<td>Sin hielo, 600ml</td>
+								<td>Listo</td>
+								<td>	
+									<i class="fa fa-pencil"></i>
+									<i class="fa fa-trash-o"></i>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<!--END TABLA DE ORDEN-->
+					<div id="clrfix"></div>
+						<input type="button" value="Facturar" id="boton-derecho">
+						<input type="button" value="Eliminar orden" id="boton-derecho">
+				</section>
+				<!--END ORDEN DE LA MESA-->
+
+			</section>
+			<!--END CUERPO DE SALON.HTML-->
+
+		</div>
+		<script src="../scripts/salon.js"></script>
+	</body>
+</html>

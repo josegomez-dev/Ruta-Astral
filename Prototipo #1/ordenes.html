@@ -1,0 +1,201 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/ordenes.css">
+		<link rel="stylesheet" href="css/tablas.css">
+		<link rel="stylesheet" href="css/font-awesome.css">
+	</head>
+	<body>
+		<div class="side-bar">
+			<div class="image"></div>
+			<nav>
+				<a href="menu.html">Menú</a>
+				<a href="salon.html">Salón</a>
+				<a href="#">Configuración</a>
+				<a href="#" class="selected">Órdenes</a>
+				<a href="#">Facturación</a>
+				<a href="#">Reportes</a>
+			</nav>
+			<p>Usuario1</p>
+			<nav class="opciones-usuario">
+				<a href="registro_usuario.html">Registrarse</a>
+				<a href="#">Ingresar</a>
+				<a href="#">Perfil</a>
+				<a href="#">Cerrar sesion</a>
+			</nav>
+		</div>
+		<div class="main">
+			<div class="top-menu">
+				<nav>
+					<a href="#" class="selected">General</a>
+					<a href="#">Mesas</a>
+					<a href="#">Platos</a>
+					<a href="#">Usuarios</a>
+				</nav>
+			</div>	
+
+			<!--CUERPO DE ORDENES.HTML-->
+			<section id="ordenes">
+
+				<!--ORDEN DE LA MESA-->
+				<section id="ordenes">
+					<h1>Órdenes pendientes</h1>
+
+					<!--TABLA DE ORDEN-->
+					<table id="standar-table">
+						<thead>
+							<th id="l">Nombre</th>
+							<th id="l">Detalles</th>
+							<th id="xxs">Ingreso</th>
+							<th id="xxs">Origen</th>
+							<th id="xxs">Orden</th>
+							<th id="xxs">Estado</th>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Arroz con pollo</td>
+								<td>Con papas, poca sal, con ensalada.</td>
+								<td>3:16pm</td>
+								<td>Abraxas</td>
+								<td>#00325</td>
+								<td>
+									<select id="boton-derecho">
+										<option value="">Pendiente</option>
+										<option value="mesa011">Listo</option>
+										<option value="mesa012">En tránsito</option>
+										<option value="mesa013">Cancelado</option>
+										<option value="mesa014">Entregado</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<td>Pescado empanizado</td>
+								<td>Con papas, poca sal, con ensalada.</td>
+								<td>3:17pm</td>
+								<td>Abraxas</td>
+								<td>#00325</td>
+								<td>
+									<select id="boton-derecho">
+										<option value="">Pendiente</option>
+										<option value="mesa011">Listo</option>
+										<option value="mesa012">En tránsito</option>
+										<option value="mesa013">Cancelado</option>
+										<option value="mesa014">Entregado</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<td>Chifrijo</td>
+								<td>Bastante limón.</td>
+								<td>3:17pm</td>
+								<td>Abraxas</td>
+								<td>#00325</td>
+								<td>
+									<select id="boton-derecho">
+										<option value="">Pendiente</option>
+										<option value="mesa011">Listo</option>
+										<option value="mesa012">En tránsito</option>
+										<option value="mesa013">Cancelado</option>
+										<option value="mesa014">Entregado</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<td>Arroz con pollo</td>
+								<td>Normal.</td>
+								<td>3:16pm</td>
+								<td>Abraxas</td>
+								<td>#00325</td>
+								<td>
+									<select id="boton-derecho">
+										<option value="">Pendiente</option>
+										<option value="mesa011">Listo</option>
+										<option value="mesa012">En tránsito</option>
+										<option value="mesa013">Cancelado</option>
+										<option value="mesa014">Entregado</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<td>Coca cola</td>
+								<td>Sin hielo.</td>
+								<td>3:19pm</td>
+								<td>Abraxas</td>
+								<td>#00325</td>
+								<td>
+									<select id="boton-derecho">
+										<option value="">Pendiente</option>
+										<option value="mesa011">Listo</option>
+										<option value="mesa012">En tránsito</option>
+										<option value="mesa013">Cancelado</option>
+										<option value="mesa014">Entregado</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<td>Zarza</td>
+								<td>Sin hielo.</td>
+								<td>3:19pm</td>
+								<td>Abraxas</td>
+								<td>#00325</td>
+								<td>
+									<select id="boton-derecho">
+										<option value="">Pendiente</option>
+										<option value="mesa011">Listo</option>
+										<option value="mesa012">En tránsito</option>
+										<option value="mesa013">Cancelado</option>
+										<option value="mesa014">Entregado</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<td>Arroz con pollo</td>
+								<td>Normal</td>
+								<td>3:32pm</td>
+								<td>Exprés</td>
+								<td>#00326</td>
+								<td>
+									<select id="boton-derecho">
+										<option value="">Pendiente</option>
+										<option value="mesa011">Listo</option>
+										<option value="mesa012">En tránsito</option>
+										<option value="mesa013">Cancelado</option>
+										<option value="mesa014">Entregado</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<td>Zarza</td>
+								<td>600ml</td>
+								<td>3:32pm</td>
+								<td>Exprés</td>
+								<td>#00326</td>
+								<td>
+									<select id="boton-derecho">
+										<option value="">Pendiente</option>
+										<option value="mesa011">Listo</option>
+										<option value="mesa012">En tránsito</option>
+										<option value="mesa013">Cancelado</option>
+										<option value="mesa014">Entregado</option>
+									</select>
+								</td>
+							</tr>
+							
+						</tbody>
+					</table>
+					<!--END TABLA DE ORDEN-->
+					<div id="clrfix"></div>
+
+				</section>
+				<!--END ORDEN DE LA MESA-->
+
+			</section>
+			<!--END CUERPO DE SALON.HTML-->
+
+		</div>
+		<script src="scripts/script.js"></script>
+	</body>
+</html>

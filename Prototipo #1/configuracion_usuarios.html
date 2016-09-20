@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/font-awesome.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<div class="side-bar">
+			<div class="image"></div>
+			<nav>
+				<a href="#">Menú</a>
+				<a href="#">Salón</a>
+				<a href="#" class="selected">Configuración</a>
+				<a href="#">Órdenes</a>
+				<a href="#">Facturación</a>
+				<a href="#">Reportes</a>
+			</nav>
+			<p class="">Usuario1</p>
+			<nav class="opciones-usuario">
+				<a href="#" id="registrar" class="hide">Registrase</a>
+				<a href="#" id="ingresar" class="hide">Ingresar</a>
+				<a href="#" class="">Perfil</a>
+				<a href="#" class="">Cerrar sesion</a>
+			</nav>
+		</div>
+		<div class="main">
+			<div class="top-menu show">
+				<nav>
+					<a href="#">General</a>
+					<a href="#">Mesas</a>
+					<a href="#">Platos</a>
+					<a href="#" class="selected">Usuarios</a>
+					<a href="#">Puestos</a>
+				</nav>
+			</div>
+			<div class="contenedor">
+				<div class="panel">
+					<div class="titulo">Usuarios</div>
+					<div class="cuerpo">
+						<div class="contenedor-tabla">	
+							<table id="tabla-info-usuario" class="tabla">
+								<thead>
+									<tr>
+										<th>Id</th>
+										<th>Nombre completo</th>
+										<th>Correo</th>
+										<th>Telefono</th>
+										<th>Dirección</th>
+										<th>Puesto</th>
+										<th>Role</th>
+										<th>Estado</th>
+									</tr>
+								</thead>
+								<tbody>
+									
+								</tbody>
+							</table>
+						</div>
+						<div class="flotar-derecha">
+							<i id="conf-usuario" class="fa fa-pencil hide"></i>
+							<!-- <i id="borrar-ususario" class="fa fa-user-times hide"></i> -->
+							<i id="agregar-usuario" class="fa fa-user-plus"></i>
+						</div>
+						<div class="clear"></div>
+						<form action="" method="post" id="info-usuario" class="hide">
+							<div class="col-2">
+								<label for="nombre-apellidos">Nombre y apellidos</label>
+								<input type="text" id="nombre-apellidos" class="text-input" name="user">
+								<label for="clave">Contraseña</label>
+								<input type="password" id="clave" class="text-input" name="pass">
+								<label for="telefono">Teléfono</label>
+								<input type="text" id="telefono" class="text-input" name="telefono">
+								<label for="correo">Correo</label>
+								<input type="text" id="correo" class="text-input" name="correo">
+								<label for="direccion">Dirección</label>
+								<textarea name="direccion" id="direccion" class="text-input"></textarea>
+							</div>
+							<div class="col-2">
+								<label for="puesto">Puesto</label>
+								<select name="puesto" id="puesto" class="style-select">
+									<option value="">Seleccionar</option>
+									<option value="Salonero">Salonero</option>
+									<option value="Gerente">Gerente</option>
+									<option value="CocinaYBar">Cocina y bar</option>
+									<option value="Soporte">Soporte</option>
+									<option value="Cliente">Cliente</option>
+								</select>
+								<label for="role">Role</label>
+								<select name="role" id="role" class="style-select">
+									<option value="">Seleccionar</option>
+									<option value="Administrador">Administrador</option>
+									<option value="Soporte">Soporte</option>
+									<option value="Cajero">Cajero</option>
+									<option value="Salonero">Salonero</option>
+									<option value="CocinaBar">Cocina y Bar</option>
+									<option value="Miselaneo">Miselaneo</option>
+									<option value="Cliente">Cliente</option>
+								</select>
+								<label for="estado">Estado</label>
+								<select name="estado" id="estado" class="style-select">
+									<option value="Activo">Activo</option>
+									<option value="Inactivo">Inactivo</option>
+								</select>
+							</div>
+							<div class="clear"></div>
+							<div class="flotar-derecha">
+								<button class="btn btn-cancel cancelar-form">Cancelar</button>
+								<button id="guardar" type="submit" class="btn btn-normal enviar-form">Guardar</button>
+							</div>
+							<div class="clear"></div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="scripts/configuracion_usuarios.js"></script>
+	</body>
+</html>

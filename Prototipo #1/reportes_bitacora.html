@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Reportes Bitacora</title>
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/font-awesome.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/datepicker.css">
+	</head>
+	<body>
+		<div class="side-bar">
+			<div class="image"></div>
+			<nav>
+				<a href="#">Menú</a>
+				<a href="#">Salón</a>
+				<a href="#">Configuración</a>
+				<a href="#">Órdenes</a>
+				<a href="#">Facturación</a>
+				<a href="#" class="selected">Reportes</a>
+			</nav>
+			<p>Usuario1</p>
+			<nav class="opciones-usuario">
+				<a href="#" class="hide">Registrase</a>
+				<a href="#" class="hide">Ingresar</a>
+				<a href="#">Perfil</a>
+				<a href="#">Cerrar sesion</a>
+			</nav>
+		</div>
+		<div class="main">
+			<div class="top-menu show">
+				<nav>
+					<!-- <a href="#">Mesas</a> -->
+					<a href="reportes_platos.html">Platos</a>
+					<a href="#" class="selected">Bitacora</a>
+					<!-- <a href="#">Usuarios</a> -->
+					<!-- <a href="#">Puestos</a> -->
+				</nav>
+			</div>
+			<div class="contenedor">
+				<div class="panel">
+					<div class="titulo">Platos</div>
+					<div class="cuerpo">
+						<form action="" id="filtro">
+							<div class="col-9">
+								<label for="">Desde (fecha)</label>
+								<input type="text" name="fecha-inicio" data-type="date" placeholder="DD/MM/AAAA" class="text-input date">
+							</div>
+							<div class="col-9">
+								<label for="">Hasta (fecha)</label>
+								<input type="text" name="fecha-final" data-type="date" placeholder="DD/MM/AAAA" class="text-input date">
+							</div>
+							<!-- <div class="col-9">
+								<label for="">Desde (hora)</label>
+								<select class="style-select" name="hora-inicio" id="">
+									<option value="">Seleccionar</option>
+									<option value="1">1pm</option>
+									<option value="2">2pm</option>
+									<option value="3">3pm</option>
+									<option value="4">4pm</option>
+									<option value="5">5pm</option>
+									<option value="6">6pm</option>
+									<option value="7">7pm</option>
+									<option value="8">8pm</option>
+									<option value="9">9pm</option>
+									<option value="10">10pm</option>
+									<option value="11">11pm</option>
+									<option value="12">12pm</option>
+								</select>
+								<input type="text" data-type="number" class="text-input">
+							</div>
+							<div class="col-9">
+								<label for="">Hasta (hora)</label>
+								<select class="style-select" name="hora-final" id="">
+									<option value="">Seleccionar</option>
+									<option value="1">1pm</option>
+									<option value="2">2pm</option>
+									<option value="3">3pm</option>
+									<option value="4">4pm</option>
+									<option value="5">5pm</option>
+									<option value="6">6pm</option>
+									<option value="7">7pm</option>
+									<option value="8">8pm</option>
+									<option value="9">9pm</option>
+									<option value="10">10pm</option>
+									<option value="11">11pm</option>
+									<option value="12">12pm</option>
+								</select>
+								<input type="text" data-type="number" class="text-input">
+							</div> -->
+							<button class="fa fa-filter btn"></button>
+						</form>
+						<div class="contenedor-tabla tabla-reporte">
+							<table id="reporte-bitacora" class="tabla">
+								<thead>
+									<tr>
+										<th>Hora</th>
+										<th>Usuario</th>
+										<th>Acción</th>
+										<th>Descripción</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>6:20pm</td>
+										<td>DBrenez</td>
+										<td>Elminar Mesa</td>
+										<td>Mesa Odin</td>
+									</tr>
+									<tr>
+										<td>3:16pm</td>
+										<td>LCruz</td>
+										<td>Agrega Puesto</td>
+										<td>Limpia vidrios</td>
+									</tr>
+									<tr>
+										<td>12:01pm</td>
+										<td>Lcruz</td>
+										<td>Ingresa Mesa</td>
+										<td>Galatea</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="flotar-derecha">
+							<i class="fa fa-print imprimir"></i>
+						</div>
+						<div class="clear"></div>
+					</div>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<script src="scripts/jquery-2.1.4.js"></script>
+		<script src="scripts/jquery-ui.js"></script>
+		<script src="scripts/reportes_bitacora.js"></script>
+	</body>
+</html>

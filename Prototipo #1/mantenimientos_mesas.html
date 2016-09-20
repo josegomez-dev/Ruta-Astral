@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/font-awesome.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<div class="side-bar">
+			<div class="image"></div>
+			<nav>
+				<a href="menu.html" >Menú</a>
+				<a href="salon.html">Salón</a>
+				<a href="#" class="selected">Configuración</a>
+				<a href="ordenes.html">Órdenes</a>
+				<a href="#">Facturación</a>
+				<a href="#">Reportes</a>
+				<a href="#">Perfil</a>
+				<a href="#">Ingresar</a>
+				<a href="registro_usuario.html">Registrarse</a>
+			</nav>
+		</div>
+
+			<div class="main">
+			<div class="top-menu show">
+				<nav>
+					<a href="#">General</a>
+					<a href="#" class="selected" >Mesas</a>
+					<a href="#">Platos</a>
+					<a href="#">Usuarios</a>
+				</nav>
+			</div>
+			<div class="contenedor">
+				<div class="panel">
+					<div class="titulo"> Mesas</div>
+					<div class="cuerpo">
+						<div class="contenedor-tabla">
+							<table class="tabla">
+								<thead>
+									<tr>
+										<th>Id</th>
+										<th>Nombre</th>
+										<th>Capacidad</th>
+										<th>Preferencia</th>
+										<th></th>
+									</tr>
+								</thead>
+								<tbody class="tbody-centrado">
+									<tr id="A1">
+										<td class="id">A1</td>
+										<td class="nombre">Cielo</td>
+										<td class="capacidad">5</td>
+										<td class="preferencial"><i class="fa fa-check"></i></td>
+										<td 	="">
+											<i class="fa fa-trash-o eliminar"></i>
+											<i class="fa fa-pencil modificar"></i>
+										</td>
+									</tr>
+									<tr id="A2">
+										<td class="id">A2</td>
+										<td class="nombre">Mares</td>
+										<td class="capacidad">10</td>
+										<td class="preferencial"><i class="fa fa-check"></i></td>
+										<td class="">
+											<i class="fa fa-trash-o eliminar"></i>
+											<i class="fa fa-pencil modificar"></i>
+										</td>
+									</tr>
+									<tr id="A3">
+										<td class="id">A3</td>
+										<td class="nombre">Viaje</td>
+										<td class="capacidad">6</td>
+										<td class="preferencial"><i class="fa fa-check"></i></td>
+										<td class="">
+											<i class="fa fa-trash-o eliminar"></i>
+											<i class="fa fa-pencil modificar"></i>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="flotar-derecha">
+								<i class="fa fa-plus" id="agregar-nuevo"></i>
+						</div>
+							<div class="clear"></div>
+							<form id="info-mesas" class="form-pequeno hide" method="post" action="">
+							<label for="nombre1">Nombre</label>
+							<input id="nombre" class="text-input" type="text" name="nombre-mesa"></input>
+							<label for="capacidad">Capacidad</label>
+							<input id="capacidad" class="text-input" type="text" name="capacidad"> </input>
+							<label for ="preferencial">Escoja si es preferencial</label>
+							<select id="preferencial" class="text-input">
+								<option value="">Seleccionar</option>
+								<option value="true">Si</option>
+								<option value="false">No</option>
+							</select>
+							<div class="flotar-derecha">
+									<button class="btn btn-guargar guardar-form" id="guardar-nuevo">Guardar</button>
+									<button class="btn btn-cancelar cancelar-form" id="cancelar-ingreso">Cancelar</button>
+							</div>
+							<div class="clear"></div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="scripts/mantenimineto_mesas.js"></script>
+	</body>
+
+
+
+</html>					

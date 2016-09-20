@@ -1,0 +1,87 @@
+/**
+			PRESETS
+
+COLORES:
+	GRIS #413D3D
+	NEGRO #040004
+	VINO #4B000F
+	LIMA #C8FF00
+	CLOUDS #ECF0F1
+	ROJO #FA023C
+/
+
+/*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.
+			CSS MENU
+*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*/
+
+#menu{
+	width: 800px;
+	margin: 100px auto;
+	position: absolute;
+	left: 0;
+	right: 0;
+	/* height: 100px; */
+	/* background: rgba(4, 0, 4, 0.44); */
+	/*background: url('../img/bg_alfa.png');*/
+}
+
+#menu h1{
+	margin: 0 auto;
+	text-align: center;
+	font-family: lato-bold;
+}
+
+#menu .item {
+	width: 250px;
+	display: inline-block;
+	margin: 13px 0 0 10px;
+	background: url('../img/bg_alfa.png');
+}
+
+/*
+#menu .item :hover{
+	background: url('../img/bg_alfa.png');
+	background: url('../img/bg_alfa.png');
+}
+*/
+
+#menu .plato{
+	width: 80px;
+	height: 80px;
+	margin: 10px 10px 0 10px;
+	display: block;
+	float: left;
+	background: #667788;
+}
+
+#menu .cal{
+	text-align: left;
+	font-style: italic;;
+}
+
+#menu .desc{
+	text-align: center;
+	color:#C8FF00;
+	padding: 10px;
+	text-align: center;
+	margin: 0px;
+}
+
+#menu .btn {
+	display: block;
+	float: right;
+	padding: 8px 15px;
+	margin-right: 12px;
+	border: none;
+	font-weight: bold;
+	background: #FA023C;
+	color: #ecf0f1;
+}
+
+#clrfix{
+	display: block;
+	float: none;
+	clear: both;
+}
+
+

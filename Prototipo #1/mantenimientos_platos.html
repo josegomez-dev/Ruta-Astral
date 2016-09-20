@@ -1,0 +1,128 @@
+<!doctype html>
+<html >
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		
+		<div class="side-bar">
+			<div class="image"></div>
+			<nav>
+				<a href="#" >Menú</a>
+				<a href="#">Salón</a>
+				<a href="#" class="selected" >Configuración </a>
+				<a href="#">Órdenes</a>
+				<a href="#">Facturación</a>
+				<a href="#">Reportes</a>
+				<a href="#">Perfil</a>
+				<a href="#">Ingresar</a>
+				<a href="#"> Registrar</a>
+			</nav>
+		</div>
+
+		<div class="main">
+			<div class="top-menu show">
+				<nav>
+					<a href="#">General</a>
+					<a href="#" >Mesas</a>
+					<a href="#" class="selected" >Platos</a>
+					<a href="#">Usuarios</a>
+				</nav>
+			</div>
+			<div class="contenedor">
+			
+				<div class="panel">
+					<div class="titulo"> Platos</div>
+					<div class="cuerpo">
+						<div class="contenedor-tabla">
+							<table id="tabla-info-mesas" class="tabla">
+								<thead>
+									<tr>
+										<th>Nombre Esp</th>
+										<th>Nombre Ing</th>
+										<th>Ingredientes</th>
+										<th>Precios</th>
+										<th>Calorias</th>
+										<th>Caract Esp</th>
+										<th>Tipo</th>
+										<th></th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Arroz con pollo</td>
+										<td>Rice with chicken</td>
+										<td>Aroz, pollo, especies</td>
+										<td>2000</td>
+										<td>120</td>
+										<td></td>
+										<td>Plato fuerte</td>
+										<td><i class="fa fa-trash-o eliminar"></i>
+											<i class="fa fa-pencil modificar"></i></td>
+									</tr>
+									<tr>
+										<td>Arroz con pollo</td>
+										<td>Rice with chicken</td>
+										<td>Aroz, pollo, especies</td>
+										<td>2000</td>
+										<td>120</td>
+										<td></td>
+										<td>Plato fuerte</td>
+										<td><i class="fa fa-trash-o ekiminar"></i>
+											<i class="fa fa-pencil modificar"></i></td>
+									</tr>
+								</tbody>
+			
+							</table>
+						</div>
+						<div class="flotar-derecha">
+								<i class="fa fa-plus agregar-nuevo"></i>
+							
+						</div>
+						<div class="clear"></div>	
+						<form id="info-platos" class="" method="post" action="">
+							<div class="col-2">
+								<label for="nombre-esp">Nombre Esp</label>
+								<input id="nombre-esp" class="text-input" type="text" name="nombre-esp"> </input>
+								<label for="nombre-ing">Nombre Ing</label>
+								<input id="nombre-ing" class="text-input" type="text" name="nombre-ing"> </input>
+								<label for="ingredientes">Ingredientes</label>
+								<input id="ingredientes" class="text-input" type="text" name="ingredientes"> </input> 
+								<label id="precio" >Precio</label>
+								<input id="precio" class="text-input" type="text" name="iprecios"> </input>
+							</div>
+
+							<div class="col-2">
+								<label for="calorias">Calorias</label>
+								<input id="calorias" class="text-input" type="text" name="calorias"> </input>
+								<label for="caracterisitcas-especiales">Caracteristicas Especiales</label>
+								<input id="caracterisitcas-especiales" class="text-input" type="text" name="caracterisitcas-especiales"> </input>
+								<label for ="tipo">Tipo</label>
+								<select id="tipo">
+									<option value="">Seleccionar</option>
+									<optgroup label="">
+										<option value="bebida">Bebida</option>
+										<option value="plato-fuerte">Plato fuerte</option>
+										<option value="bebida">Postre</option>
+										<option value="plato-fuerte">Ensaladas</option>
+									</optgroup> 
+								</select>
+							</div>
+								<div class="flotar-derecha">
+									<button class="btn btn-guargar guardar-form" id="guardar-nuevo">Guardar</button>
+									<button class="btn btn-cancelar cancelar-form" id="cancelar-ingreso">Cancelar</button>
+								</div>
+						</form>
+						<div class="clear"></div>
+					</div>			
+				</div>	
+			</div>	
+		</div>	
+		<script src="scripts/mantenimiento_platos.js"></script>
+		
+	</body>
+</html>					
